@@ -24,3 +24,12 @@ def dividir(a, b):
 def potencia(a, b):
     """Retorna a base elevada ao expoente."""
     return a ** b
+
+def calcular_media(lista):
+    """Retorna a média dos números de uma lista.
+    Gera um erro se a lista estiver vazia.
+    """
+    if len(lista) == 0:
+        raise ValueError("A lista não pode estar vazia")
+    
+    return sum(lista) / len(lista)
